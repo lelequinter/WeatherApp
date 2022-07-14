@@ -8,17 +8,16 @@ import { SearchModule } from './components/search/search.module';
 import { WeatherModule } from './pages/weather/weather.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     SearchModule,
-    WeatherModule
+    WeatherModule,
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
