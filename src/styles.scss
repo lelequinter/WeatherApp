@@ -18,43 +18,49 @@ input {
   box-sizing: border-box;
 }
 
-body{
-    font-family: 'Lato', sans-serif;
-    background-color: $secondary-color;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: $gray;
+body {
+  font-family: "Lato", sans-serif;
+  background-color: $secondary-color;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: $gray;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-.container{
-    width: 50%;
+.container {
+  width: 50%;
 }
 
 // utility
-.width-33{
-    width: 33.33%;
+.width-33 {
+  width: 33.33%;
 }
 
-.mx-auto{
-    margin-left: auto;
-    margin-right: auto;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.my-auto{
-    margin-top: auto;
-    margin-bottom: auto;
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-.px-auto{
-    padding-left: auto;
-    padding-right: auto;
+.px-auto {
+  padding-left: auto;
+  padding-right: auto;
 }
 
-.py-auto{
-    padding-top: auto;
-    padding-bottom: auto;
+.py-auto {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 95%;
+  }
 }

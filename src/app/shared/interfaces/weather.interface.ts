@@ -41,6 +41,6 @@ export interface WeatherData {
 }
 
 export interface Coord {
-  lon: number;
-  lat: number;
+  latitude: number;
+  longitude: number;
 }

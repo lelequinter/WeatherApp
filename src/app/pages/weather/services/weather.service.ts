@@ -15,7 +15,7 @@ export class WeatherService {
   }
 
   public getWeatherByCoords(coord: Coord): Observable<WeatherData> {
-    const params = new HttpParams().set('lat', coord.lat).set('lon', coord.lon);
+    const params = new HttpParams().set('lat', coord.latitude).set('lon', coord.longitude);
     return this.http.get<WeatherData>(`${this.API_URL}/weather`, { params });
   }
 }
