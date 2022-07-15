@@ -10,19 +10,12 @@ export class WeatherService {
   constructor(private readonly http: HttpClient) {}
 
   public getWeatherByName(city: string): Observable<WeatherData> {
-    const params = new HttpParams()
-      .set('q', city)
-      .set('units', 'metric')
-      .set('appid', environment.openWeather.key);
+    const params = new HttpParams().set('q', city);
     return this.http.get<WeatherData>(`${this.API_URL}/weather`, { params });
   }
 
   public getWeatherByCoords(coord: Coord): Observable<WeatherData> {
-    const params = new HttpParams()
-      .set('lat', coord.lat)
-      .set('lon', coord.lon)
-      .set('units', 'metric')
-      .set('appid', environment.openWeather.key);
+    const params = new HttpParams().set('lat', coord.lat).set('lon', coord.lon);
     return this.http.get<WeatherData>(`${this.API_URL}/weather`, { params });
   }
 }
